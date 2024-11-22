@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="globalStyle.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="max-w-[1408.1px]">
       <!-- navbar -->
-      <nav class="flex justify-between mt-[18px] mr-[20px]">
+      <nav class="flex justify-between mt-[18px] mr-[20px] ml-[21px]">
         <div class="flex items-center gap-6">
           <img src="images/logo.png" alt="logo" />
           <!-- search input -->
@@ -54,21 +55,206 @@
         <ul
           class="flex gap-[36px] text-[#474747] text-[13px] cursor-pointer font-bold"
         >
-          <li>دسته بندی ها</li>
-          <li>صفحه اصلی</li>
-          <li>مقایسه</li>
-          <li class="text-[#003FEB]">تجربه خرید از آترین کالا</li>
-          <li>وبلاگ آترین کالا</li>
+          <a href="#" target="_blank">
+            <li>دسته بندی ها</li>
+          </a>
+          <a href="#" target="_blank">
+            <li>صفحه اصلی</li>
+          </a>
+          <a href="#" target="_blank">
+            <li>مقایسه</li>
+          </a>
+          <a href="#" target="_blank">
+            <li class="text-[#003FEB]">تجربه خرید از آترین کالا</li>
+          </a>
+          <a href="#" target="_blank">
+            <li>وبلاگ آترین کالا</li>
+          </a>
         </ul>
       </section>
 
       <!-- section  2 TopMenu -->
 
       <!-- banner image -->
-      <div class="mr-[17px] w-full mt-[15px]">
+      <div class="mr-[17px] w-full mt-[15px] relative">
         <img class="w-full" src="images/banner.png" alt="banner" />
+        <!-- button slider -->
+        <div
+          class="absolute top-1/2 right-[25px] top-[235px] flex items-center gap-4 transform -translate-x-1/2 -translate-y-1/2"
+        >
+          <div
+            class="w-[32px] cursor-pointer bg-[#FFFF] flex justify-center items-center h-[32.25px] rounded-[100%]"
+          >
+            <img class="" src="icons/arrowRight.svg" alt="right" />
+          </div>
+          <div
+            class="w-[32px] cursor-pointer bg-[#FFFF] flex justify-center items-center h-[32.25px] rounded-[100%]"
+          >
+            <img class="" src="icons/arrowLeft.svg" alt="left" />
+          </div>
+        </div>
+
+        <div class="absolute right-[85px] top-[260px] flex items-center gap-2">
+          <div class="w-[7px] h-[7px] bg-[#717171] rounded-[100%]"></div>
+          <p class="text-[#FFFF] text-xl font-bold rounded-lg">|</p>
+          <div class="w-[7px] h-[7px] bg-[#717171] rounded-[100%]"></div>
+        </div>
+        <!-- button slider -->
       </div>
       <!-- banner image -->
+
+      <!-- section 3 -->
+      <div class="flex justify-around mt-[25px]">
+        <div class="flex flex-col items-center gap-2">
+          <a class="flex flex-col items-center gap-2" href="#" target="_blank">
+            <img src="images/bannerImage/Ellipse5.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">گوشی اپل</p>
+          </a>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <a href="#" target="_blank" class="flex flex-col items-center gap-2">
+            <img src="images/bannerImage/Ellipse6.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">آیپد</p>
+          </a>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <a href="#" target="_blank" class="flex flex-col items-center gap-2">
+            <img src="images/bannerImage/Ellipse7.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">پلی استیشن</p>
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <a href="#" target="_blank" class="flex flex-col items-center gap-2">
+            <img src="images/bannerImage/Ellipse8.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">لپ تاپ</p>
+          </a>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <a href="#" target="_blank" class="flex flex-col items-center gap-2">
+            <img src="images/bannerImage/Ellipse9.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">مانیتور (نمایشگر)</p>
+          </a>
+        </div>
+
+        <div class="flex flex-col items-center gap-2">
+          <a href="#" target="_blank" class="flex flex-col items-center gap-2">
+            <img src="images/bannerImage/Ellipse10.png" alt="products" />
+            <p class="text-[17px] text-[#515151]">کارت گرافیک</p>
+          </a>
+        </div>
+      </div>
+      <!-- section 3 -->
+
+      <!-- section 4 -->
+      <div
+        class="bg-[#6122EC] relative flex justify-center max-w-[1320px] h-[360px] mx-auto mt-[14px] border"
+      >
+        <div class="absolute flex justify-between w-full mt-[14px]">
+          <p class="mr-[20px] text-[20px] text-[#FFFF] font-bold">
+            محصولات جدید
+          </p>
+          <div class="flex items-center gap-4 ml-[17px]">
+            <p class="text-[20px] text-[#FFFF] font-bold">دیدن همه</p>
+            <img
+              class="w-[6.88px]"
+              src="icons/arrowLeft2.svg"
+              alt="arrowLeft"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 gap-[71px] items-center mt-4">
+          <div
+            class="w-[200px] h-[287px] mb-3 bg-[#ffff] mt-4 p-4 rounded-2xl shadow-lg shadow-gray-600"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img
+                class="objet-cover w-[165px] h-[165px]"
+                src="images/section2/atrinkala-hp-victus-15-core-i7-12650h-15-6-full-hd-1 1.png"
+                alt=""
+              />
+              <p class="text-rigtht w-[150px] text-[13px]">
+                لپ تاپپ اچ پی 14 اینچ
+              </p>
+              <p class="text-[13px] mt-[2px] text-left">
+                Elitebook 840 G2 Core i5- 5200U FULL HD
+              </p>
+              <p class="text-[13px] font-bold text-left w-full mt-[15px]">
+                43.000.000 تومان
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[200px] h-[287px] bg-[#ffff] p-4 rounded-2xl shadow-lg shadow-gray-600"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img
+                class="objet-cover w-[165px] h-[165px]"
+                src="images/section2/atrinkala-apple-iphone-15-pro-256gb-blue 1.png"
+                alt=""
+              />
+              <p class="text-rigtht w-[150px] text-[13px]">
+                لپ تاپپ اچ پی 14 اینچ
+              </p>
+              <p class="text-[13px] mt-[2px] text-left">
+                Elitebook 840 G2 Core i5- 5200U FULL HD
+              </p>
+
+              <div class="text-[10px] flex items-center gap-8 text-[#B3000F]">
+                <p class="font-bold">تخفیف خورده</p>
+                <del>43.000.000 تومان</del>
+              </div>
+
+              <p class="text-[13px] font-bold text-left w-full mt-[3px]">
+                43.000.000 تومان
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[200px] h-[287px] bg-[#ffff] p-4 rounded-2xl shadow-lg shadow-gray-600"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img
+                class="objet-cover w-[165px] h-[165px]"
+                src="images/section2/atrinkala-samsung-galaxy-buds-2-headphones-black 1.png"
+                alt=""
+              />
+              <p class="text-rigtht w-[150px] text-[13px]">
+                لپ تاپپ اچ پی 14 اینچ
+              </p>
+              <p class="text-[13px] mt-[2px] text-left">
+                Elitebook 840 G2 Core i5- 5200U FULL HD
+              </p>
+              <p class="text-[13px] font-bold text-left w-full mt-[15px]">
+                43.000.000 تومان
+              </p>
+            </div>
+          </div>
+          <div
+            class="w-[200px] h-[287px] bg-[#ffff] p-4 rounded-2xl shadow-lg shadow-gray-600"
+          >
+            <div class="flex flex-col justify-center items-center">
+              <img
+                class="objet-cover w-[165px] h-[165px]"
+                src="images/section2/monitor-gaming-fantech-gm271s-3 1.png"
+                alt=""
+              />
+              <p class="text-rigtht w-[150px] text-[13px]">
+                لپ تاپپ اچ پی 14 اینچ
+              </p>
+              <p class="text-[13px] mt-[2px] text-left">
+                Elitebook 840 G2 Core i5- 5200U FULL HD
+              </p>
+              <p class="text-[13px] font-bold text-left w-full mt-[15px]">
+                43.000.000 تومان
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 4 -->
     </div>
   </body>
 </html>
