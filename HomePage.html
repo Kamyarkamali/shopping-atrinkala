@@ -77,7 +77,24 @@
 
       <!-- banner image -->
       <div class="max-w-[1400px] mr-3 mt-[15px] relative">
-        <img class="w-full" src="images/banner.png" alt="banner" />
+        <!-- banner slider -->
+        <div class="slider">
+          <div class="slides">
+            <img class="w-full" src="images/banner.png" alt="banner" />
+            <img
+              class="w-full"
+              src="https://dkstatics-public.digikala.com/digikala-adservice-banners/78c6d7ff9ad1355ebe3a1eecfa3b6267b0737c72_1732120882.gif?x-oss-process=image?x-oss-process=image/format,webp"
+              alt="banner"
+            />
+            <img
+              class="w-full"
+              src="https://dkstatics-public.digikala.com/digikala-adservice-banners/790f85de460ba414a702662320a8a15300092430_1732251408.jpg?x-oss-process=image/quality,q_95/format,webp"
+              alt="banner"
+            />
+          </div>
+        </div>
+        <!-- banner slider -->
+
         <!-- button slider -->
         <div
           class="absolute top-1/2 right-[25px] top-[235px] flex items-center gap-4 transform -translate-x-1/2 -translate-y-1/2"
@@ -85,12 +102,22 @@
           <div
             class="w-[32px] cursor-pointer bg-[#FFFF] flex justify-center items-center h-[32.25px] rounded-[100%]"
           >
-            <img class="" src="icons/arrowRight.svg" alt="right" />
+            <img
+              class="next"
+              onclick="nextSlider()"
+              src="icons/arrowRight.svg"
+              alt="right"
+            />
           </div>
           <div
             class="w-[32px] cursor-pointer bg-[#FFFF] flex justify-center items-center h-[32.25px] rounded-[100%]"
           >
-            <img class="" src="icons/arrowLeft.svg" alt="left" />
+            <img
+              class="prev"
+              onclick="prevSlider()"
+              src="icons/arrowLeft.svg"
+              alt="left"
+            />
           </div>
         </div>
 
