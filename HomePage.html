@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="max-w-[1470px] mx-auto">
+    <div class="max-w-[1470px] mx-auto overflow-x-hidden">
       <!-- navbar -->
       <nav class="flex justify-between mt-[18px] mr-[20px] ml-[21px]">
         <div class="flex items-center gap-6">
@@ -56,19 +56,21 @@
           class="flex gap-[36px] text-[#474747] text-[13px] cursor-pointer font-bold"
         >
           <a href="#" target="_blank">
-            <li>دسته بندی ها</li>
+            <li class="hover:text-[#003FEB] duration-300">دسته بندی ها</li>
           </a>
           <a href="#" target="_blank">
-            <li>صفحه اصلی</li>
+            <li class="hover:text-[#003FEB] duration-300">صفحه اصلی</li>
           </a>
           <a href="#" target="_blank">
-            <li>مقایسه</li>
+            <li class="hover:text-[#003FEB] duration-300">مقایسه</li>
           </a>
           <a href="#" target="_blank">
-            <li class="text-[#003FEB]">تجربه خرید از آترین کالا</li>
+            <li class="hover:text-[#003FEB] duration-300">
+              تجربه خرید از آترین کالا
+            </li>
           </a>
           <a href="#" target="_blank">
-            <li>وبلاگ آترین کالا</li>
+            <li class="hover:text-[#003FEB] duration-300">وبلاگ آترین کالا</li>
           </a>
         </ul>
       </section>
@@ -80,14 +82,18 @@
         <!-- banner slider -->
         <div class="slider">
           <div class="slides">
-            <img class="w-full" src="images/banner.png" alt="banner" />
             <img
-              class="w-full"
+              class="w-full h-[305px]"
+              src="images/banner.png"
+              alt="banner"
+            />
+            <img
+              class="w-full h-[305px]"
               src="https://dkstatics-public.digikala.com/digikala-adservice-banners/78c6d7ff9ad1355ebe3a1eecfa3b6267b0737c72_1732120882.gif?x-oss-process=image?x-oss-process=image/format,webp"
               alt="banner"
             />
             <img
-              class="w-full"
+              class="w-full h-[305px]"
               src="https://dkstatics-public.digikala.com/digikala-adservice-banners/790f85de460ba414a702662320a8a15300092430_1732251408.jpg?x-oss-process=image/quality,q_95/format,webp"
               alt="banner"
             />
@@ -285,7 +291,7 @@
 
       <!-- section 5 mobile  apple -->
       <div
-        class="border-[5px] max-w-[1380px] h-[452px] border-[#6122EC] rounded-[17px] mt-[18px] mb-20"
+        class="border-[5px] max-w-[1380px] h-[452px] border-[#6122EC] rounded-[17px] mt-[18px] mx-auto"
       >
         <div
           class="max-w-[1335px] bg-[#6122EC] h-[64px] mb-20 mt-[17px] rounded-[9px] mx-auto"
@@ -297,12 +303,12 @@
           </h3>
         </div>
 
-        <div class="flex justify-center items-center h-[200px] w-[300px]">
+        <div class="flex justify-start mr-[58px] items-center h-[200px] w-full">
           <div
-            class="border-2 shadow-2xl shadow-gray-200 inline-block rounded-[13px] border-[#C0C0C0] w-[180px] h-[289px]"
+            class="border-2 shadow-2xl shadow-gray-200 inline-block rounded-[13px] border-[#C0C0C0] w-[230px] h-[306px]"
           >
             <img
-              class="w-[179px]"
+              class="w-[230px]"
               src="/images/imageIphone/Rectangle 28.png"
               alt="allmobiles"
             />
@@ -324,9 +330,31 @@
               </div>
             </div>
           </div>
+          <div class="flex justify-center items-center w-full">
+            <div class="grid grid-cols-4 gap-[27px] relative">
+              <div
+                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
+              >
+                1
+              </div>
+              <div
+                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
+              >
+                2
+              </div>
+              <div
+                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
+              >
+                3
+              </div>
+              <div
+                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
+              >
+                4
+              </div>
+            </div>
+          </div>
         </div>
-
-        <!-- <div class="grid grid-cols-4"></div> -->
       </div>
       <!-- section 5 mobile  apple -->
     </div>
