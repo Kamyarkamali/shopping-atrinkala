@@ -330,33 +330,116 @@
               </div>
             </div>
           </div>
+
           <div class="flex justify-center items-center w-full">
-            <div class="grid grid-cols-4 gap-[27px] relative">
+            <div class="relative overflow-hidden w-full max-w-[920px]">
+              <!-- گرید محصولات -->
               <div
-                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
+                id="product-carousel"
+                class="grid grid-cols-4 gap-6 transition-transform duration-300 ease-in-out"
               >
-                1
+                <!-- محصول 1 -->
+                <div
+                  class="w-[205px] h-[306px] bg-white shadow rounded-lg flex flex-col items-center"
+                >
+                  <img
+                    src="images/imageIphone/atrinkala-apple-iphone-11-pro-512gb-gold_1 2.png"
+                    alt="Product"
+                    class="w-[191px] h-[191px] object-cover mt-2"
+                  />
+                  <p class="text-sm text-gray-800 text-center w-[156px]">
+                    گوشی آیفون 13 حافظه 128 گیگابایت (Active)
+                  </p>
+                  <div class="flex items-center gap-2 mt-1">
+                    <p class="text-xs text-red-600">تخفیف خورده</p>
+                    <del class="text-xs text-gray-500">42.000.000</del>
+                  </div>
+                  <p class="text-lg text-black mt-1">21.650.000 تومان</p>
+                </div>
+
+                <!-- ادامه محصولات (تکرار محصولات به همین صورت) -->
+                <div
+                  class="w-[205px] h-[306px] bg-white shadow rounded-lg flex flex-col items-center"
+                >
+                  <img
+                    src="images/imageIphone/atrinkala-iphone12pro-b_4 2.png"
+                    alt="Product"
+                    class="w-[191px] h-[191px] object-cover mt-2"
+                  />
+                  <p class="text-sm text-gray-800 text-center w-[156px]">
+                    گوشی آیفون 13 حافظه 128 گیگابایت (Active)
+                  </p>
+                  <p class="text-lg text-black mt-4">21.650.000 تومان</p>
+                </div>
+
+                <div
+                  class="w-[205px] h-[306px] bg-white shadow rounded-lg flex flex-col items-center"
+                >
+                  <img
+                    src="images/imageIphone/iphone-13-pro-white_1_2 2.png"
+                    alt="Product"
+                    class="w-[191px] h-[191px] object-cover mt-2"
+                  />
+                  <p class="text-sm text-gray-800 text-center w-[156px]">
+                    گوشی آیفون 13 حافظه 128 گیگابایت (Active)
+                  </p>
+                  <p class="text-lg text-black mt-4">21.650.000 تومان</p>
+                </div>
+
+                <div
+                  class="w-[205px] h-[306px] bg-white shadow rounded-lg flex flex-col items-center"
+                >
+                  <img
+                    src="images/imageIphone/iphone-14_1_ 2.png"
+                    alt="Product"
+                    class="w-[191px] h-[191px] object-cover mt-2"
+                  />
+                  <p class="text-sm text-gray-800 text-center w-[156px]">
+                    گوشی آیفون 13 حافظه 128 گیگابایت (Active)
+                  </p>
+                  <p class="text-lg text-black mt-4">21.650.000 تومان</p>
+                </div>
               </div>
-              <div
-                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
-              >
-                2
+
+              <!-- دکمه‌های چپ و راست -->
+              <div class="absolute top-[135px] left-0">
+                <button
+                  id="btn-left"
+                  class="rounded-full shadow-lg bg-white flex justify-center items-center w-8 h-8"
+                >
+                  <img class="w-3" src="icons/arrowLeft.svg" alt="Left" />
+                </button>
               </div>
-              <div
-                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
-              >
-                3
-              </div>
-              <div
-                class="w-[205px] h-[306px] bg-[#ffff] shadow-xl shadow-gray-200 rounded-lg"
-              >
-                4
+              <div class="absolute top-[135px] right-0">
+                <button
+                  id="btn-right"
+                  class="rounded-full shadow-lg bg-white flex justify-center items-center w-8 h-8"
+                >
+                  <img class="w-3" src="icons/arrowRight.svg" alt="Right" />
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <!-- section 5 mobile  apple -->
+
+      <!-- section 6 banner2 -->
+
+      <div class="flex justify-around items-center mt-[24px] mb-9">
+        <img
+          class="w-[670px] h-[200px]"
+          src="images/bannerImage/Rectangle 39.png"
+          alt="banner"
+        />
+        <img
+          class="w-[650px] h-[200px]"
+          src="images/bannerImage/Rectangle 38.png"
+          alt="banner"
+        />
+      </div>
+
+      <!-- section 6 banner2 -->
     </div>
 
     <script src="js/homePage.js"></script>
